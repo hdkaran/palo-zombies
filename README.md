@@ -16,6 +16,10 @@ https://palozombiesserver20210502201127.azurewebsites.net/
 ## Architecture
 ![diagram](https://github.com/hdkaran/palo-zombies/blob/main/diagram.JPG)
 
+## Available API Endpoints
+* /api/hospital
+* /api/illness
+
 ## Workflow
 
 User is presented with a list of Illnesses -> User Selects an Illness -> User is presented with a Level of Pain Scale -> User Selects a Pain Level -> The application calculates and analyzes all available hospitals for that pain level and suggests a sorted list of hospitals to the user -> User selects a hospital -> User provides First Name and Last Name in an Input Form -> All recorded information is sent to MongoDb Atlas Database -> After receiving the id from Db a Thankyou page is displayed.
