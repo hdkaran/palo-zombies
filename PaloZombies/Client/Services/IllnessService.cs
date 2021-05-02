@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PaloZombies.Client.Services
 {
-    public class IllnessService: IIllnessService
+    public class IllnessService : IIllnessService
     {
         private readonly HttpClient httpClient;
         private string url = "api/illness";
@@ -21,9 +21,7 @@ namespace PaloZombies.Client.Services
 
         public async Task<PaginatedIllness> GetPaginatedIllness()
         {
-            var response = await httpClient.GetAsync(url);
-
-            return await response.Content.ReadFromJsonAsync<PaginatedIllness>();
+            return await GetPaginatedIllness(null);
         }
         public async Task<PaginatedIllness> GetPaginatedIllness(Page page)
         {

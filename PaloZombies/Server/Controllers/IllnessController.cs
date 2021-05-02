@@ -49,7 +49,7 @@ namespace PaloZombies.Server.Controllers
                 else
                     throw new ApplicationException();
             }
-            catch (Exception e1)
+            catch (Exception e1) //text will be used on front if an error occurs in the request
             {
 
                 paginatedIllness.ErrorText = $"A network error has occured. Please check your connection and try again later.";

@@ -11,8 +11,7 @@ namespace PaloZombies.Client.Components
 {
     public partial class HospitalSelector
     {
-        [Parameter]
-        public Illness PatientIllness { get; set; }
+      
         [Parameter]
         public int LevelOfPain { get; set; }
         [Parameter]
@@ -26,11 +25,13 @@ namespace PaloZombies.Client.Components
 
         protected override async Task OnParametersSetAsync()
         {
+            //initial load
             paginatedHospital = await _hospitalService.GetPaginatedHospital(null, LevelOfPain);
             await base.OnParametersSetAsync();
         }
         protected async Task<PaginatedHospital> GetPaginatedHospitalAsync(Page page)
         {
+            //on pagination
             return paginatedHospital = await _hospitalService.GetPaginatedHospital(page, LevelOfPain);
         }
 

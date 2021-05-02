@@ -1,11 +1,11 @@
 ﻿@inject IIllnessService _illnessService
 
 
-@if (paginatedIllnesses == null)
+@if (paginatedIllnesses == null) //while illnesses are loading
 {
     <ZombieSpinner></ZombieSpinner>
 }
-else if (paginatedIllnesses?.Illnesses != null)
+else if (paginatedIllnesses?.Illnesses != null) //after successful load
 {
     <div class="card m-3">
         <h4 class="card-header">Select Illness</h4>
@@ -18,7 +18,7 @@ else if (paginatedIllnesses?.Illnesses != null)
         </div>
     </div>
 }
-else if (paginatedIllnesses.ErrorText != null)
+else if (paginatedIllnesses.ErrorText != null) //if load was unsuccessful
 {
     <div class="container p-3">
         <div class="h3 m-3">@paginatedIllnesses.ErrorText</div>

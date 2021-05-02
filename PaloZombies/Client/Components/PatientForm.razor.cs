@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace PaloZombies.Client.Components
 {
+    //uses a State variable to track the state of the form.
+    // this form is completed in steps
     public partial class PatientForm
     {
         private Patient _patient;

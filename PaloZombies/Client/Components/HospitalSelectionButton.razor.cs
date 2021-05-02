@@ -18,6 +18,7 @@ namespace PaloZombies.Client.Components
         private TimeSpan timeSpan = new TimeSpan();
         protected override Task OnParametersSetAsync()
         {
+            //converting to timespan for ease of use
             timeSpan = TimeSpan.FromMinutes(HospitalDTO.QuotedWaitingTime);
             return base.OnParametersSetAsync();
         }

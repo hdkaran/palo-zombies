@@ -18,13 +18,13 @@ namespace PaloZombies.Server.Controllers
     public class HospitalController : ControllerBase
     {
         private readonly IHttpClientFactory factory;
-        private string API_ENDPOINT = @"/hospitals";
+        private string API_ENDPOINT = @"/hospitals"; //actual api endpoint
         private string API_URL;
 
         public HospitalController(IHttpClientFactory factory, IConfiguration config)
         {
             this.factory = factory;
-            API_URL = config.GetValue<string>("PaloSettings:APIUrl");
+            API_URL = config.GetValue<string>("PaloSettings:APIUrl"); //getting url from appsettings.json
         }
 
 
@@ -38,8 +38,10 @@ namespace PaloZombies.Server.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var model = await response.Content.ReadFromJsonAsync<CollectionModel>();
-                    var pageSize = (page.Size == 0 ? 10 : page.Size);
+                    var pageSize = page.Size == 0 ? 10 : page.Size;
+                    //get all hospitals that are available in the api and convert them to HospitalDTO objects, also, calculate the wait time
                     paginatedHospital.HospitalDTOs = (await GetAllHospitals(model)).Select(x => new HospitalDTO() { HospitalId = x.Id, QuotedWaitingTime = GetWaitingTime(x.WaitingList, LevelOfPain), HospitalName = x.Name }).ToList();
+                    //sort the HospitalDTOs by wait time ascending and then send data back based on page info
                     paginatedHospital.HospitalDTOs = paginatedHospital.HospitalDTOs.OrderBy(x => x.QuotedWaitingTime).Skip(page.Number * pageSize).Take(pageSize).ToList();
                     paginatedHospital.Page = model.Page;
                     return paginatedHospital;
@@ -49,7 +51,7 @@ namespace PaloZombies.Server.Controllers
                     throw new Exception();
                 }
             }
-            catch (Exception e)
+            catch (Exception e) //using the text provided on the front end
             {
                 return new PaginatedHospital() { ErrorText = "A network error has occured. Please check your connection and try again later." };
             }
@@ -92,7 +94,6 @@ namespace PaloZombies.Server.Controllers
 
         private async Task<HttpResponseMessage> DoGetRequestWithPageAndReturnResponse(Page page)
         {
-
             var request = new HttpRequestMessage(HttpMethod.Get, API_URL + API_ENDPOINT + ExternalAPIHelpers.PaloConvert.ConvertPageToAPIString(page));
             var client = factory.CreateClient();
             try
@@ -102,8 +103,7 @@ namespace PaloZombies.Server.Controllers
             }
             catch (Exception e)
             {
-                throw e;
-
+                throw new ApplicationException();
             }
         }
     }

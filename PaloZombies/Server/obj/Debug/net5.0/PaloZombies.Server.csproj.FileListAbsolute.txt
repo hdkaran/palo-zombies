@@ -1,10 +1,3 @@
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.AssemblyInfoInputs.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.AssemblyInfo.cs
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.csproj.CoreCompileInputs.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.RazorAssemblyInfo.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.RazorAssemblyInfo.cs
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\PaloZombies.Client.StaticWebAssets.xml
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\appsettings.json
@@ -56,6 +49,13 @@ C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\Palo
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\PaloZombies.Client.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\bin\Debug\net5.0\PaloZombies.Shared.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.csprojAssemblyReference.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.AssemblyInfo.cs
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.csproj.CoreCompileInputs.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.RazorAssemblyInfo.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\PaloZombies.Server.RazorAssemblyInfo.cs
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\staticwebassets\PaloZombies.Server.StaticWebAssets.Manifest.cache
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\staticwebassets\PaloZombies.Server.StaticWebAssets.xml
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Server\obj\Debug\net5.0\scopedcss\bundle\PaloZombies.Server.styles.css

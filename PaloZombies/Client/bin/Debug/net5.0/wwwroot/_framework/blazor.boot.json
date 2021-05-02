@@ -198,12 +198,12 @@
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
       "PaloZombies.Shared.dll": "sha256-UBTMyPZJ6lYAp7rRBMM2txKq0TVuoR1PXxx+J4ajIaI=",
-      "PaloZombies.Client.dll": "sha256-ul7DCVFw4sN8gYtL7zJvZ0mHpgHSFSZMSnNFqlPEaHQ="
+      "PaloZombies.Client.dll": "sha256-sKFYgbKDvysalzJPPD9n0pxMm10fltodXwDbGwMf9Eo="
     },
     "lazyAssembly": null,
     "pdb": {
       "PaloZombies.Shared.pdb": "sha256-HeKdsVO0z5CaZ6zY8gV8\/9i9MmniC\/eyKDNolgjPdjU=",
-      "PaloZombies.Client.pdb": "sha256-\/ZxeipokbUdmDaB0NaRtNvJ7hry+SKeDq2CjrykGwx0="
+      "PaloZombies.Client.pdb": "sha256-fpg66\/fqkt1gMg898S7tTPTAn3f6AH4r+F5M\/4vGPCo="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",

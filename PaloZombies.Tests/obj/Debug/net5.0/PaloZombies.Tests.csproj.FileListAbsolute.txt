@@ -1,9 +1,5 @@
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.csprojAssemblyReference.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.AssemblyInfoInputs.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.AssemblyInfo.cs
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.csproj.CoreCompileInputs.cache
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\testhost.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Client.StaticWebAssets.xml
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.Views.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.Views.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.deps.json
@@ -20,6 +16,7 @@ C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\Blazo
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\BlazorDebugProxy\Mono.Cecil.Pdb.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\BlazorDebugProxy\Mono.Cecil.Rocks.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.StaticWebAssets.xml
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.exe
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\testhost.exe
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -147,10 +144,13 @@ C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZ
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Client.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Shared.pdb
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.csprojAssemblyReference.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.AssemblyInfo.cs
+C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.csproj.CoreCompileInputs.cache
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.csproj.CopyComplete
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\ref\PaloZombies.Tests.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.pdb
 C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\obj\Debug\net5.0\PaloZombies.Tests.genruntimeconfig.cache
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Client.StaticWebAssets.xml
-C:\Users\karan\source\repos\PaloZombies\PaloZombies.Tests\bin\Debug\net5.0\PaloZombies.Server.StaticWebAssets.xml

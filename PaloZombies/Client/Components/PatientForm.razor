@@ -18,6 +18,7 @@
                     break;
                 case 3:
                     <BackButton ButtonText="Back to Hospital Selection" GoBack="SetPreviousState" />
+                    #region Final Form
                     <div class="card m-3">
                         <h4 class="card-header">Patient's Information</h4>
                         <div class="form-row p-2">
@@ -52,6 +53,7 @@
                             </div>
                         </div>
                     </div>
+                    #endregion
                     break;
                 case 4:
                     if (_patient.Id == null)

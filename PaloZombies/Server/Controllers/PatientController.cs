@@ -21,9 +21,8 @@ namespace PaloZombies.Server.Controllers
         }
    
         [HttpPost]
-        public ActionResult<Patient> Create(Patient patient)
+        public ActionResult<Patient> Create(Patient patient) //post request from front end.. talks to repository and saves to database
         {
-            
             patientRepository.Create(patient);
             if (patient==null || patient.Id == null)
                 return null;

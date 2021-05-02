@@ -18,7 +18,7 @@ namespace PaloZombies.Client.Services
             this.httpClient = httpClient;
         }
 
-        public async Task<PaginatedHospital> GetPaginatedHospital(Page page, int LevelOfPain)
+        public async Task<PaginatedHospital> GetPaginatedHospital(Page page, int LevelOfPain) //builds the url and sends a Get request to the backend
         {
             var response = await httpClient.GetAsync(url + "?" + (page == null ? "" : Helpers.Extensions.GetUrlParametersFromPage(page)) + "&" + Helpers.Extensions.GetUrlParameterFromLevelOfPain(LevelOfPain));
             return await response.Content.ReadFromJsonAsync<PaginatedHospital>();

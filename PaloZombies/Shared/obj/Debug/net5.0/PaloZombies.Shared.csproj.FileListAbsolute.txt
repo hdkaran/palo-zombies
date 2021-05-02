@@ -9,4 +9,3 @@ C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Debug\net5.0\Palo
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Debug\net5.0\PaloZombies.Shared.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Debug\net5.0\ref\PaloZombies.Shared.dll
 C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Debug\net5.0\PaloZombies.Shared.pdb
-C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Debug\net5.0\PaloZombies.Shared.csprojAssemblyReference.cache
