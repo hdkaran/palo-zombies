@@ -1,0 +1,11 @@
+﻿<BackButton ButtonText="Back to Illness Selection" GoBack="GoBack" />
+
+<div class="card m-3">
+    <h4 class="card-header">Select Level of Pain</h4>
+    <ul class="flex-container m-2 p-3">
+        @foreach (var smiley in smileyModels)
+        {
+            <li class="flex-item shadow cursor-pointer" @onclick="()=> { SetSelectedLevelOfPain.InvokeAsync(smiley.PainLevel); }" style="background-color:@smiley.BackgroundColour">@smiley.Emoji</li>
+        }
+    </ul>
+</div>

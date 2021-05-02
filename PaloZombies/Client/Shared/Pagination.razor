@@ -1,0 +1,18 @@
+﻿@*I have copied this template from bootstrap and ammended it to be used for my purposes.
+    Using my own loops and code-behind logic.
+
+    This paginator can be used by different components.. For example, Hospitals listing as well as Illness listing
+*@
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        @foreach (var link in links)
+        {
+            <li @onclick="(()=>SelectedPageInternal(link))"
+                style="cursor:pointer"
+                class="page-item @(link.Enabled?null:"disabled") @(link.Active?"active":null)">
+                <span class="page-link" href="#">@link.Text</span>
+            </li>
+        }
+    </ul>
+</nav>

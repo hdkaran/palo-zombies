@@ -1,0 +1,7 @@
+﻿<div class="card m-2 shadow @(IsSelected?"border-success":"")">
+    <div class="card-body">
+        <h4 class="card-title" id="illness-@Illness.Id">@Illness.Name</h4>
+        <button class="btn btn-primary @(IsSelected?"bg-success":"")" @onclick="()=> { SetPatientIllness.InvokeAsync(Illness); }">@(IsSelected?"Selected":"Select")</button>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\bin\Release\net5.0\PaloZombies.Shared.deps.json
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\bin\Release\net5.0\PaloZombies.Shared.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\bin\Release\net5.0\ref\PaloZombies.Shared.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\bin\Release\net5.0\PaloZombies.Shared.pdb
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.csprojAssemblyReference.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.AssemblyInfo.cs
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.csproj.CoreCompileInputs.cache
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\ref\PaloZombies.Shared.dll
+C:\Users\karan\source\repos\PaloZombies\PaloZombies\Shared\obj\Release\net5.0\PaloZombies.Shared.pdb

@@ -1,0 +1,74 @@
+﻿@inject IPatientService _patientService
+@inject NavigationManager _navigationManager
+@if (_patient != null)
+{
+    <div class="container">
+        <EditForm Model="_patient" OnValidSubmit='async ()=> { await SubmitForm();  }'>
+            <DataAnnotationsValidator />
+            @switch (FormState)
+            {
+                case 0:
+                    <IllnessSelector SelectedIllnessId="@(_patient.Illness==null?0:_patient.Illness.Id)" SetPatientIllness="@SetSelectedIllness"></IllnessSelector>
+                    break;
+                case 1:
+                    <LevelOfPainSelector GoBack="@SetPreviousState" SetSelectedLevelOfPain="@SetSelectedLevelOfPain"></LevelOfPainSelector>
+                    break;
+                case 2:
+                    <HospitalSelector GoBack="@SetPreviousState" SelectedHospitalId="(_patient.SelectedHospital==null?0:_patient.SelectedHospital.HospitalId)" LevelOfPain="@_patient.LevelOfPain" SetSelectedHospital="@SetSelectedHospital"></HospitalSelector>
+                    break;
+                case 3:
+                    <BackButton ButtonText="Back to Hospital Selection" GoBack="SetPreviousState" />
+                    <div class="card m-3">
+                        <h4 class="card-header">Patient's Information</h4>
+                        <div class="form-row p-2">
+                            <div class="form-group col-12">
+                                <label>First Name</label>
+                                <InputText id="firstName" class="form-control" @bind-Value="@_patient.FirstName" />
+                                <ValidationMessage For="()=>_patient.FirstName" />
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="lastName">Last Name</label>
+                                <InputText class="form-control" id="lastName" @bind-Value="@_patient.LastName" />
+                                <ValidationMessage For="()=>_patient.LastName" />
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Illness</label>
+                                <input type="text" value="@_patient.Illness.Name" disabled="true" class="form-control" />
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Level Of Pain</label>
+                                <input type="text" value="@_patient.LevelOfPain" disabled="true" class="form-control" />
+                            </div>
+                            <div class="form-group col-12">
+                                <label>Selected Hospital</label>
+                                <input type="text" value="@_patient.SelectedHospital.HospitalName" disabled="true" class="form-control" />
+                            </div>
+                            <div class="text-center col-12">
+                                <button type="submit" class="btn btn-success mb-2">Book Hospital</button>
+                                @if (loading)
+                                {
+                                    <ZombieSpinner></ZombieSpinner>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    break;
+                case 4:
+                    if (_patient.Id == null)
+                    {
+                        <div class="container">
+                            <div class="h3">Unfortunately an error has occured.</div>
+                            <BackButton ButtonText="Back to Patient Information" GoBack="SetPreviousState" />
+                        </div>
+                    }
+                    else
+                    {
+                        <ThankYou PatientId="@_patient.Id" />
+                    }
+                    break;
+                default:
+                    break;
+            }
+        </EditForm>
+    </div>
+}

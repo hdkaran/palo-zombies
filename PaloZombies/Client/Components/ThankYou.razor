@@ -1,0 +1,12 @@
+﻿@inject NavigationManager _navigationManager
+<div class="jumbotron text-center">
+    <h1 class="display-4">Information Received!</h1>
+    <p class="lead"><strong>Help is on the way!</strong> Hang on tight, we are on the way to save you. </p>
+    <hr>
+    <p>
+        Your Patient Id is <strong>@PatientId</strong>
+    </p>
+    <p class="lead">
+        <button class="btn btn-primary" @onclick="NavigateToStart" type="button">Start Again</button>
+    </p>
+</div>

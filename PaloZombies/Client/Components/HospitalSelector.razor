@@ -1,0 +1,27 @@
+﻿@inject IHospitalService _hospitalService
+
+@if (paginatedHospital == null)
+{
+    <ZombieSpinner></ZombieSpinner>
+}
+else if (paginatedHospital?.HospitalDTOs != null)
+{
+    <BackButton ButtonText="Back to Level of Pain" GoBack="GoBack" />
+    <div class="card m-3 shadow">
+        <h4 class="card-header">Our suggested hospitals...</h4>
+        <div class="container p-3">
+            @foreach (var hosp in paginatedHospital.HospitalDTOs)
+            {
+                <HospitalSelectionButton HospitalDTO="hosp" SetSelectedHospital="SetSelectedHospital" IsSelected="(SelectedHospitalId==hosp.HospitalId)"></HospitalSelectionButton>
+            }
+            <Pagination CurrentPage="paginatedHospital.Page.Number" TotalPages="paginatedHospital.Page.TotalPages+1" SelectedPages="SelectedPage"></Pagination>
+
+        </div>
+    </div>
+}
+else if (paginatedHospital.ErrorText != null)
+{
+    <div class="container p-3">
+        <div class="h3 m-3">@paginatedHospital.ErrorText</div>
+    </div>
+}

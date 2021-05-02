@@ -1,0 +1,8 @@
+﻿<div class="card m-2 shadow @(IsSelected?"border-success":"")">
+    <div class="card-body">
+        <h4 class="card-title">@HospitalDTO.HospitalName </h4>
+        <h6 class="card-body p-0"><strong>Wait time:</strong><span class="pink-text">@(timeSpan.Days>0?$"{timeSpan.Days} days":"") @(timeSpan.Hours>0?$"{timeSpan.Hours} hrs":"") @(timeSpan.TotalMinutes==0?"No wait time":$"{timeSpan.Minutes} mins")</span></h6>
+        <button class="btn btn-primary @(IsSelected?"bg-success":"")" @onclick="()=> { SetSelectedHospital.InvokeAsync(HospitalDTO); }">@(IsSelected?"Selected":"Select")</button>
+    </div>
+</div>
+
