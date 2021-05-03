@@ -29,18 +29,27 @@ User is presented with a list of Illnesses -> User Selects an Illness -> User is
  
 ### .NET Installation
 * To install .NET please visit: https://dotnet.microsoft.com/download
-* To check if .NET is installed, go to a command line client (For example, Command prompt, powershell or Terminal) and enter command: dotnet --version
+* To check if .NET is installed, go to a command line client (For example, Command prompt, powershell or Terminal) and enter command: 
+ ```
+ dotnet --version
+ ```
 * If a version is returned, it indicates that .NET was installed successfully 
 
 ### To run the project
 * Download(or clone) the project as ZIP from github and extract it.
 * Use a command line client and cd(change directory) to "PaloZombies\PaloZombies\Server\"
-* After you are in the Server folder, simply run the command: dotnet run
+* After you are in the Server folder, simply run the command: 
+```
+dotnet run
+```
 * After the command has finished processing, you can access the solution using any browser. Just type "localhost:5000" in your address bar. 
 
 ### To run the tests
 * Use a command line client and cd(change directory) to "PaloZombies\PaloZombies.Tests"
-* After you are in the PaloZombies.Tests folder, simply run the command: dotnet run
+* After you are in the PaloZombies.Tests folder, simply run the command: 
+```
+dotnet test
+```
 
 ## Support
 For any issues regarding this solution please email me at: karanbhatia0161@gmail.com
